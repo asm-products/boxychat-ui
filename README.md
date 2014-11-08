@@ -1,3 +1,4 @@
+
 # Bc
 
 This README outlines the details of collaborating on this Ember application.
@@ -49,3 +50,15 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+=======
+# BoxyChat
+
+## Real time communications for companies
+
+This is a product being built by the Assembly community. You can help push this idea forward by visiting [https://assembly.com/boxychat](https://assembly.com/boxychat).
+
+### How Assembly Works
+
+Assembly products are like open-source and made with contributions from the community. Assembly handles the boring stuff like hosting, support, financing, legal, etc. Once the product launches we collect the revenue and split the profits amongst the contributors.
+
+Visit [https://assembly.com](https://assembly.com) to learn more.
