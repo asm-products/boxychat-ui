@@ -20,8 +20,10 @@ You will need the following things properly installed on your computer.
 * `bower install`
 
 ## Running / Development
+UI uses SASS. Requires sass installed. For sass installation refer [here](http://sass-lang.com/install).
 
-* `ember server`
+To run in development mode:
+* `ember server` or `ember s`
 * Visit your app at http://localhost:4200.
 
 ### Code Generators
