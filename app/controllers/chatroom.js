@@ -6,7 +6,7 @@ export default Ember.ObjectController.extend({
 
 });
 
-$(document).ready(function(){
+$(window).on('load resize',function(){
 	var sidebarHeight = $(window).height()-$('#top-bar').height()-32;
 	$('#side-bar').css('height',sidebarHeight+'px');
 });

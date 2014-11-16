@@ -24,33 +24,42 @@
 		}
 	
 		.chat-actions{
-			width:250px;
+			width:210px;
 			float:right;
 			.icons-plus{
-				height:20px;
-				float:left;
+				height: 20px;
+				float: left;
+				width: 22px;
+				margin-top: 1px;
 			}
 			.icons-microphone{
 				height:17px;
+				margin-top:2px;
+				width:15px;
 			}
 			.icons-video{
 				height:15px;
+				margin-top:3px;
+				width:21px;
 			}
 			.icons-Oval394Oval395{
 				height:12px;
+				margin-top:4px;
+				width:15px;
 			}
 			ul{
 				float:right;
+				margin-right:0.5em;
 				width:100%;
 				li{
-					float:left;
-					list-style-type:none;
 					width:25%;
+					float:right;
+					list-style-type:none;
 					line-height:21px;
 					padding-top:21px;
 					span{
 						float:left;
-						font-size:0.8em;
+						font-size:0.7em;
 						color:#A3AEC4;
 						font-weight:bold;
 					}
@@ -81,12 +90,16 @@
 		div{
 			margin-top:5px;
 			float:right;
-			.icons-smile{
-				width:30px;
+			div{
+				margin-right:1em;
+				float:right;
+			}
+			div.icons-smile{
+				width:16px;
 				height:17px;
 			}
-			.icons-Group{
-				width:30px;
+			div.icons-Group{
+				width:16px;
 				height:17px;
 			}
 		}
