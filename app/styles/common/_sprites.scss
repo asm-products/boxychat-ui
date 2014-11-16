@@ -1,6 +1,4 @@
 @import "compass/utilities/sprites";
-$icon-layout: smart;
-$icon-sprite-dimensions: true;
 //@import "icons/*.png";
 //@include all-icons-sprites;
 
@@ -8,6 +6,9 @@ $icon-sprite-dimensions: true;
 .icons-sprite, .icons-Bell, .icons-Group, .icons-Oval394Oval395, .icons-Plusiconlarge, .icons-arrow, .icons-back, .icons-camera, .icons-microphone, .icons-plus, .icons-smile, .icons-video {
   background-image: url('images/icons-sdefe1a13dc.png');
   background-repeat: no-repeat;
+  width:30px;
+  height:auto;
+  cursor:pointer;
 }
 .icons-Bell {
   background-position: 0 0;

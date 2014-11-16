@@ -1,5 +1,8 @@
 // import our sass modules here
+@import "common/variables.scss";
 @import"common/mixins.scss";
+@import "common/sprites.scss";
+@import "common/fonts.scss";
 @import"common/layout.scss";
 @import"partials/topbar.scss";
 @import"partials/sidebar.scss";

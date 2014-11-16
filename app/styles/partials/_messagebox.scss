@@ -1,5 +1,95 @@
 #messagebox{
+	width:75%;
 	float:right;
 	background-color:#fff;
-	width:70%;
+	.groupbar{
+		border-bottom:1px solid #ddd;
+		height:60px;
+		width:100%;
+		font-family:'robotoregular';
+		color:#52565B;
+		
+		h3{
+			font-size:1em;
+			float:left;
+			width:80px;
+			margin:1em;
+			padding-top:5px;
+			.icons-arrow{
+				width: 9px;
+				height: 6px;
+				float: right;
+				margin-top:9px;
+			}
+		}
+	
+		.chat-actions{
+			width:250px;
+			float:right;
+			.icons-plus{
+				height:20px;
+				float:left;
+			}
+			.icons-microphone{
+				height:17px;
+			}
+			.icons-video{
+				height:15px;
+			}
+			.icons-Oval394Oval395{
+				height:12px;
+			}
+			ul{
+				float:right;
+				width:100%;
+				li{
+					float:left;
+					list-style-type:none;
+					width:25%;
+					line-height:21px;
+					padding-top:21px;
+					span{
+						float:left;
+						font-size:0.8em;
+						color:#A3AEC4;
+						font-weight:bold;
+					}
+					div{
+						text-align:right;
+						float:right;
+					}	
+				}
+			}
+		}
+	}
+
+	.messagebar{
+		width:75%;
+		position:absolute;
+		bottom:0;
+		border-top:1px solid #ddd;
+		height:40px;
+		paddin-top:15px;
+		input{
+			border:0;
+			margin-left:1em;
+			height:35px;
+			float:left;
+			width:85%;
+			color:#A3AEC4;
+		}
+		div{
+			margin-top:5px;
+			float:right;
+			.icons-smile{
+				width:30px;
+				height:17px;
+			}
+			.icons-Group{
+				width:30px;
+				height:17px;
+			}
+		}
+		
+	}
 }
