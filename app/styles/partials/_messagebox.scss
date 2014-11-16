@@ -1,13 +1,14 @@
 #messagebox{
-	width:75%;
-	float:right;
+	width:auto;
+	float:left;
 	background-color:#fff;
 	.groupbar{
 		border-bottom:1px solid #ddd;
 		height:60px;
 		width:100%;
+		font-size:16px;
 		font-family:'robotoregular';
-		color:#52565B;
+		color:#41454A;
 		
 		h3{
 			font-size:1em;
@@ -60,7 +61,8 @@
 					padding-top:21px;
 					span{
 						float:left;
-						font-size:0.7em;
+						font-family:'robotomedium';
+						font-size:12px;
 						color:#A3AEC4;
 						font-weight:bold;
 					}
@@ -74,14 +76,14 @@
 	}
 
 	.messagebar{
-		width:75%;
+		width:auto;
 		position:absolute;
 		bottom:0;
 		border-top:1px solid #ddd;
-		height:40px;
-		paddin-top:15px;
+		height:59px;
 		input{
 			border:0;
+			margin-top:10px;
 			margin-left:1em;
 			height:35px;
 			float:left;
@@ -94,6 +96,7 @@
 			div{
 				margin-right:1em;
 				float:right;
+				margin-top:10px;
 			}
 			div.icons-smile{
 				width:16px;

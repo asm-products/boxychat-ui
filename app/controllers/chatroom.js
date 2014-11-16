@@ -6,7 +6,9 @@ export default Ember.ObjectController.extend({
 
 });
 
-$(window).on('load resize',function(){
+$(window,document).on('load resize ready',function(){
 	var sidebarHeight = $(window).height()-$('#top-bar').height()-32;
+	var messageboxWidth = $(window).width()-$('#side-bar').outerWidth();
 	$('#side-bar').css('height',sidebarHeight+'px');
+	$('#messagebox,.messagebar').css('width',messageboxWidth+'px');
 });
