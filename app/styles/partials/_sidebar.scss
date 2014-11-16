@@ -1,9 +1,9 @@
 #sidebar{
-	width:35%;
+	width:30%;
 	float:left;
 	background-color:#EBEFF5;
 	padding-top:1em;
-
+	font-family:'robotoregular';
 	.sidebar-list{
 		min-height:300px;
 		width:100%;
@@ -15,17 +15,16 @@
 
 			li{
 				list-style-type:none;
-				font-family:'robotoregular';
-				min-height:1em;
-				font-size:1.2em;
+				font-size:0.9em;
 				color:#8D8F92;
 				width:100%;
+				font-weight:bold;
 				float:left;
 				min-height:3em;
 				line-height:2em;
 
-				.circle-container{
-					@include circle(2em,#bebebe);
+				.circle-outer-user{
+					@include circle(2.5em,#fff);
 					float:left;
 					text-align:center;
 					margin-right:0.5em;
@@ -33,25 +32,33 @@
 					.circle-user{
 						@include circle(1.8em,#bebebe);
 						overflow:hidden;
-						margin:0.1em auto;
+						margin:5px auto;
 						img{
 							width:3em;
 							height:auto;
 						}
 					
 					}
+				}
+				.circle-outer-team{
+					@include circle(2em,#bebebe);
+					float:left;
+					text-align:center;
+					margin-right:0.5em;
 					
 					.circle-team{
-						@include circle(1.8em,#fff);
-						margin:-0.9em auto;
+						@include circle(1.6em,#fff);
+						margin:-11px auto;
 						text-align:center;
 						p{
+							font-weight:normal;
 							font-size:1em;
 							color:#bbb;
 							line-height:1.7em;
 						}
 					}
 				}
+				
 			}
 		}
 	}
