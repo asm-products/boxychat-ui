@@ -1,0 +1,76 @@
+#top-bar{
+	
+	background-color: #2671F9;
+	width: 100%;
+	height: 4em;
+	padding-top: 1em;
+	color:#fff;
+	letter-spacing:0.5px;
+
+	.left-col,.right-col{
+		width:50%;
+	}
+	.left-col{
+		float:left;
+	}
+	.right-col{
+		float:right;
+	}
+
+	h2{
+		font-size:1.2em;
+		font-family: 'robotothin';
+		width:auto;
+	}
+	
+	.icons-back{
+		width: 2.5em;
+		height: 20px;
+		float: left;
+		margin-left:1em;
+		margin-top:0.7em;
+	}
+
+	.user-info{
+		font-family:'robotoregular';
+		font-size:1em;
+		margin-right:1em;
+		text-align:right;
+		margin-top:0.1em;
+		p{
+			margin-top:0.7em;
+			float:right;
+			font-size:0.9em;
+		}
+		.circle-white{
+			@include circle(40px, #fff);
+			float:right;
+			margin-left:1em;
+  		}
+		
+		.circle-avatar {
+  			@include circle(34px, transparent);
+  			overflow:hidden;
+  			margin:3px auto;
+  			img{
+  				width:60px;
+  			}
+		}
+
+		.notifications{
+			float:right;
+			margin-left:1em;
+			margin-top:0.5em;
+			.icons-Bell{
+				width:1em;
+				height:20px;
+			}	
+		}
+	}
+
+	.selected-team{
+		font-size:14px;
+		font-family:'robotoregular';
+		color:#fff;
+	}
+}

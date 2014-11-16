@@ -1,0 +1,59 @@
+#sidebar{
+	width:35%;
+	float:left;
+	background-color:#EBEFF5;
+	padding-top:1em;
+
+	.sidebar-list{
+		min-height:300px;
+		width:100%;
+		float:left;
+		margin-left:1em;
+
+		ul {
+			width:100%;
+
+			li{
+				list-style-type:none;
+				font-family:'robotoregular';
+				min-height:1em;
+				font-size:1.2em;
+				color:#8D8F92;
+				width:100%;
+				float:left;
+				min-height:3em;
+				line-height:2em;
+
+				.circle-container{
+					@include circle(2em,#bebebe);
+					float:left;
+					text-align:center;
+					margin-right:0.5em;
+					
+					.circle-user{
+						@include circle(1.8em,#bebebe);
+						overflow:hidden;
+						margin:0.1em auto;
+						img{
+							width:3em;
+							height:auto;
+						}
+					
+					}
+					
+					.circle-team{
+						@include circle(1.8em,#fff);
+						margin:-0.9em auto;
+						text-align:center;
+						p{
+							font-size:1em;
+							color:#bbb;
+							line-height:1.7em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
