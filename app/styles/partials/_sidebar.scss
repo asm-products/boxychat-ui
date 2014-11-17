@@ -28,6 +28,11 @@
 					@include circle(5px,#0000cc);
 					float:left;
 			}
+			.icons-Plusiconlarge{
+				width: 16px;
+				height: 15px;
+				margin-left: 8px;
+			}
 			li{
 				padding-left:1.2em;
 				padding-top:1em;
@@ -40,8 +45,9 @@
 				min-height:3em;
 				line-height:2em;
 				background-color:transparent;
-				cursor:pointer;
-				
+				span{
+					cursor:pointer;
+				}
 				p.notifications{
 					font-size: 10.5px;
 					font-family: "robotomedium";
@@ -63,7 +69,7 @@
 						overflow:hidden;
 						margin:5px auto;
 						img{
-							width:3em;
+							width:32px;
 							height:auto;
 						}
 					
@@ -84,6 +90,7 @@
 							font-size:1em;
 							color:#bbb;
 							line-height:1.7em;
+							cursor:pointer;
 						}
 					}
 				}
@@ -92,6 +99,9 @@
 			li.active{
 					color:#fff;
 					background-color:$chatRoomActiveTeam;
+					span{
+						cursor:default;
+					}
 			}
 		}
 	}
