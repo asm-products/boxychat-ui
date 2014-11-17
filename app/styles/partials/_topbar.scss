@@ -41,13 +41,14 @@
 			font-size:12px;
 		}
 		.circle-white{
-			@include circle(40px, #fff);
+			@include circle(30px, #fff);
 			float:right;
 			margin-left:1em;
+			margin-top:3px;
   		}
 		
 		.circle-avatar {
-  			@include circle(34px, transparent);
+  			@include circle(24px, transparent);
   			overflow:hidden;
   			margin:3px auto;
   			img{
