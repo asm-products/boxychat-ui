@@ -16,10 +16,12 @@
 	}
 
 	h2{
-		@include single-text-shadow;
-		font-size:16px;
-		font-family: 'robotoregular';
-		width:auto;
+		font-size: 16px;
+		font-family: 'robotolight';
+		margin-top: 4px;
+		width: auto;
+		font-weight: 500;
+		margin-left: 50px;
 	}
 	
 	.icons-back{
@@ -31,12 +33,12 @@
 	}
 
 	.user-info{
-		font-family:'robotomedium';
-		margin-right:1em;
+		font-family:'robotoregular';
+		margin-right:2em;
 		text-align:right;
 		margin-top:0.1em;
 		p{
-			margin-top:0.7em;
+			margin-top:10px;
 			float:right;
 			font-size:12px;
 		}
@@ -68,8 +70,11 @@
 	}
 
 	.selected-team{
-		font-size:12px;
-		font-family:'robotoregular';
-		color:#C9DCF6;
+		font-size: 12px;
+		float: left;
+		font-family: 'robotoregular';
+		color: #C9DCF6;
+		margin-top: -3px;
+		margin-left: 3px;
 	}
 }

@@ -3,7 +3,6 @@
 	float:left;
 	position:relative;
 	background-color:#EBEFF5;
-	padding-top:1em;
 	font-family:'robotomedium';
 	overflow-y:scroll;
 	overflow-x:hidden;
@@ -16,7 +15,7 @@
 			width:100%;
 			.online,.away{
 				left: 9px;
-				margin-top: 15px;
+				margin-top: 13px;
 				position:absolute;
 			}
 			.online{
@@ -31,43 +30,45 @@
 			.icons-Plusiconlarge{
 				width: 16px;
 				height: 15px;
-				margin-left: 8px;
+				margin-left: 4px;
 			}
 			li{
 				padding-left:1.2em;
 				padding-top:1em;
 				list-style-type:none;
 				font-size:14px;
-				color:#6A727F;
+				color:#7D8593;
 				width:95%;
-				font-weight:bold;
+				font-weight:lighter;
 				float:left;
-				min-height:3em;
-				line-height:2em;
+				min-height:35px;
+				line-height: 26px;
 				background-color:transparent;
 				span{
 					cursor:pointer;
 				}
 				p.notifications{
 					font-size: 10.5px;
-					font-family: "robotomedium";
-					color: #A8B6C4;
+					font-family: "robotoregular";
 					width: 160px;
 					margin-left: 3em;
-					margin-top: -10px;
+					margin-top: -15px;
 					margin-bottom: 0px;
+					font-weight: bold;
 				}
 				
 				.circle-outer-user{
-					@include circle(2.5em,#fff);
+					@include circle(30px,#fff);
+					@include single-text-shadow;
 					float:left;
 					text-align:center;
-					margin-right:0.5em;
+					margin-right: 8px;
+					border:1px solid #ccc;
 					
 					.circle-user{
-						@include circle(1.8em,#bebebe);
+						@include circle(22px,#bebebe);
 						overflow:hidden;
-						margin:5px auto;
+						margin:4px auto;
 						img{
 							width:32px;
 							height:auto;
@@ -76,21 +77,22 @@
 					}
 				}
 				.circle-outer-team{
-					@include circle(2em,#bebebe);
+					@include circle(29px,#7D8593);
 					float:left;
 					text-align:center;
-					margin-right:0.5em;
-					
+					margin-right: 11px;
+					margin-left: -4px;
 					.circle-team{
-						@include circle(1.6em,#fff);
-						margin:-11px auto;
+						@include circle(27px,#fff);
+						margin:-16px auto;
 						text-align:center;
 						p{
-							font-weight:normal;
-							font-size:1em;
-							color:#bbb;
-							line-height:1.7em;
-							cursor:pointer;
+							font-size: 17px;
+							font-family: "robotoregular";
+							font-weight: lighter;
+							color: #7D8593;
+							line-height: 1.7em;
+							cursor: pointer;
 						}
 					}
 				}
