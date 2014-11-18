@@ -2,7 +2,18 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+	compassOptions: {
+	outputStyle: 'expanded',
+	relativeAssets: true,
+    require: ['sass-css-importer'],
+    sassDir: 'app/styles',
+    imagesDir: 'public/assets/images',
+    fontsDir: 'public/assets/fonts',
+    cssDir: '/assets',
+    generatedImagesPath: 'images'
+    }
+});
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
@@ -16,5 +27,4 @@ var app = new EmberApp();
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
-
 module.exports = app.toTree();

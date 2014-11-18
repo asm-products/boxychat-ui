@@ -16,6 +16,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * change into the new directory
+* gem install --pre compass sass-css-importer
 * `npm install`
 * `bower install`
 
