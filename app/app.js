@@ -7,7 +7,7 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 
 var Socket = EmberSockets.extend(_.extend(
   config.EmberSockets, {
-    controllers: ['socket-test'],
+    controllers: ['chat'],
     autoConnect: true
   }
 ));

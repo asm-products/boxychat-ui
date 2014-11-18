@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('socketTest');
+  this.route('chat');
 });
 
 export default Router;

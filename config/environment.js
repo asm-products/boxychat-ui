@@ -41,7 +41,7 @@ module.exports = function(environment) {
 
     ENV.EmberSockets = {
       host: '0.0.0.0',
-      port: 8888
+      port: 3000
     };
   }
 
