@@ -16,11 +16,14 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * change into the new directory
+* `gem install --pre compass sass-css-importer`
 * `npm install`
 * `bower install`
 
 ## Running / Development
-UI uses SASS. Requires sass installed. For sass installation refer [here](http://sass-lang.com/install).
+UI uses SASS and COMPASS. Requires SASS and COMPASS installed. For SASS installation refer [here](http://sass-lang.com/install).
+COMPASS installation commands described in Installation section require ruby in your working enviroment.
+For Ruby installation refer [here] (https://www.ruby-lang.org/en/installation/)
 
 To run in development mode:
 * `ember server` or `ember s`

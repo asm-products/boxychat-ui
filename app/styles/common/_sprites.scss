@@ -1,0 +1,45 @@
+@import "compass/utilities/sprites";
+//@import "icons/*.png";
+//@include all-icons-sprites;
+
+/* line 128, icons/*.png */
+.icons-sprite, .icons-Bell, .icons-Group, .icons-Oval394Oval395, .icons-Plusiconlarge, .icons-arrow, .icons-back, .icons-camera, .icons-microphone, .icons-plus, .icons-smile, .icons-video {
+  background-image: url('images/icons-sdefe1a13dc.png');
+  background-repeat: no-repeat;
+  width:30px;
+  height:auto;
+  cursor:pointer;
+}
+.icons-Bell {
+  background-position: 0 0;
+}
+.icons-Group {
+  background-position: 0 -19px;
+}
+.icons-Oval394Oval395 {
+  background-position: 0 -35px;
+}
+.icons-Plusiconlarge {
+  background-position: 0 -46px;
+}
+.icons-arrow {
+  background-position: 0 -60px;
+}
+.icons-back {
+  background-position: 0 -66px;
+}
+.icons-camera {
+  background-position: 0 -86px;
+}
+.icons-microphone {
+  background-position: 0 -102px;
+}
+.icons-plus {
+  background-position: 0 -119px;
+}
+.icons-smile {
+  background-position: 0 -139px;
+}
+.icons-video {
+  background-position: 0 -156px;
+}

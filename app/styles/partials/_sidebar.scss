@@ -1,0 +1,111 @@
+#side-bar{
+	width:280px;
+	float:left;
+	position:relative;
+	background-color:#EBEFF5;
+	font-family:'robotomedium';
+	overflow-y:scroll;
+	overflow-x:hidden;
+	.sidebar-list{
+		min-height:300px;
+		width:100%;
+		float:left;
+
+		ul {
+			width:100%;
+			.online,.away{
+				left: 9px;
+				margin-top: 13px;
+				position:absolute;
+			}
+			.online{
+					@include circle(5px,#00cc00);
+					float:left;
+
+				}
+			.away{
+					@include circle(5px,#0000cc);
+					float:left;
+			}
+			.icons-Plusiconlarge{
+				width: 16px;
+				height: 15px;
+				margin-left: 4px;
+			}
+			li{
+				padding-left:1.2em;
+				padding-top:1em;
+				list-style-type:none;
+				font-size:14px;
+				color:#7D8593;
+				width:95%;
+				font-weight:lighter;
+				float:left;
+				min-height:35px;
+				line-height: 26px;
+				background-color:transparent;
+				span{
+					cursor:pointer;
+				}
+				p.notifications{
+					font-size: 10.5px;
+					font-family: "robotoregular";
+					width: auto;
+					margin-left: 3em;
+					margin-top: -15px;
+					margin-bottom: 0px;
+					font-weight: bold;
+				}
+				
+				.circle-outer-user{
+					@include circle(30px,#fff);
+					@include single-text-shadow;
+					float:left;
+					text-align:center;
+					margin-right: 8px;
+					border:1px solid #ccc;
+					
+					.circle-user{
+						@include circle(22px,#bebebe);
+						overflow:hidden;
+						margin:4px auto;
+						img{
+							width:32px;
+							height:auto;
+						}
+					
+					}
+				}
+				.circle-outer-team{
+					@include circle(29px,#7D8593);
+					float:left;
+					text-align:center;
+					margin-right: 11px;
+					margin-left: -4px;
+					.circle-team{
+						@include circle(27px,#fff);
+						margin:-16px auto;
+						text-align:center;
+						p{
+							font-size: 17px;
+							font-family: "robotoregular";
+							font-weight: lighter;
+							color: #7D8593;
+							line-height: 1.7em;
+							cursor: pointer;
+						}
+					}
+				}
+				
+			}
+			li.active{
+					color:#fff;
+					background-color:$chatRoomActiveTeam;
+					span{
+						cursor:default;
+					}
+			}
+		}
+	}
+
+}
