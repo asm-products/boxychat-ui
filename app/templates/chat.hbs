@@ -1,0 +1,37 @@
+<div class="container">
+  {{#if isLoggedIn}}
+      <div id="chat">
+          <h4>Online Users</h4>
+          <ul>
+            {{#each user in users}}
+                <li>{{user}}</li>
+            {{/each}}
+          </ul>
+          <br/>
+          <h4>Chat History ({{messages.length}})</h4>
+
+          <form>
+            {{input type="text" value=toName placeholder="To (optional)"}}
+            {{input type="text" value=newMessage placeholder="Enter a message"}}
+              <input type="submit" {{action 'chatMessage'}} />
+          </form>
+          <br/>
+
+          <div class="well">
+              <ul>
+                {{#each message in messages}}
+                    <li>{{message}}</li>
+                {{/each}}
+              </ul>
+          </div>
+      </div>
+  {{else}}
+      <div id="login">
+          <h4>Login</h4>
+        {{input type="text" value=email placeholder="Email"}}
+        {{input type="password" value=password placeholder="Password"}}
+          <input type="submit" {{action 'login'}} />
+      </div>
+  {{/if}}
+
+</div>

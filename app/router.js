@@ -11,6 +11,7 @@ Router.map(function() {
 		//this.resource('messagebox' ,{path:"/"});
 	});
 	
+	this.route('chat');
 	//this.route('map',{path:"/"});
 });
 
