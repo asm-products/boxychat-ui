@@ -1,0 +1,115 @@
+#messagebox{
+	width:auto;
+	float:left;
+	background-color:#fff;
+	.groupbar{
+		border-bottom:1px solid #F0F0F0;
+		height:60px;
+		width:100%;
+		font-size:16px;
+		font-family:'robotolight';
+		color:#41454A;
+		
+		h3{
+			font-size:15px;
+			float:left;
+			width:auto;
+			margin:1em;
+			padding-top:5px;
+			.icons-arrow{
+				margin-left:6px;
+				width: 9px;
+				height: 6px;
+				float: right;
+				margin-top:9px;
+			}
+		}
+	
+		.chat-actions{
+			width:210px;
+			float:right;
+			.icons-plus{
+				height: 20px;
+				float: left;
+				width: 22px;
+				margin-top: 1px;
+			}
+			.icons-microphone{
+				height:17px;
+				margin-top:2px;
+				width:15px;
+			}
+			.icons-video{
+				height:15px;
+				margin-top:3px;
+				width:21px;
+			}
+			.icons-Oval394Oval395{
+				height:12px;
+				margin-top:4px;
+				width:15px;
+			}
+			ul{
+				float:right;
+				margin-right:0.5em;
+				width:100%;
+				.invite-btn{
+					width:55px;
+				}
+				li{
+					width:40px;
+					float:right;
+					list-style-type:none;
+					line-height:21px;
+					padding-top:21px;
+					span{
+						float:left;
+						font-family:'robotoregular';
+						font-size:12px;
+						color:#A3AEC4;
+					}
+					div{
+						text-align:right;
+						float:right;
+					}	
+				}
+			}
+		}
+	}
+
+	.messagebar{
+		width:auto;
+		position:absolute;
+		bottom:0;
+		border-top:1px solid #F0F0F0;
+		height:59px;
+		input{
+			border:0;
+			margin-top:10px;
+			margin-left:1em;
+			height:35px;
+			float:left;
+			outline: none;
+			width:85%;
+			color:#A3AEC4;
+		}
+		div{
+			margin-top:12px;
+			float:right;
+			div{
+				margin-right:12px;
+				float:right;
+				margin-top:10px;
+			}
+			div.icons-smile{
+				width:16px;
+				height:17px;
+			}
+			div.icons-Group{
+				width:16px;
+				height:17px;
+			}
+		}
+		
+	}
+}

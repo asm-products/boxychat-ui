@@ -1,2 +1,9 @@
 // import our sass modules here
-// ex. @import "layouts/login"; // imports layouts/_login.scss
+@import "common/variables.scss";
+@import"common/mixins.scss";
+@import "common/sprites.scss";
+@import "common/fonts.scss";
+@import"common/layout.scss";
+@import"partials/topbar.scss";
+@import"partials/sidebar.scss";
+@import"partials/messagebox.scss";

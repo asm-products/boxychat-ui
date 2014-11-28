@@ -6,7 +6,13 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('chat');
+	this.resource('index',{path:"/"},function(){
+		this.resource('chatroom' ,{path:"/"});
+		//this.resource('messagebox' ,{path:"/"});
+	});
+	
+	this.route('chat');
+	//this.route('map',{path:"/"});
 });
 
 export default Router;
