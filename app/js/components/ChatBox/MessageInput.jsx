@@ -6,7 +6,6 @@ var React = require("react/addons"),
     Reflux = require("reflux"),
     Router = require("react-router");
 
-
 var MessageInput = React.createClass({
 
   mixins: [React.addons.LinkedStateMixin],
