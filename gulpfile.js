@@ -76,9 +76,9 @@ gulp.task('watch', function() {
     gulp.watch(dist + '/**/*.js', ['js']);
     gulp.watch(dist + '/**/*.css', ['css']);
     gulp.watch(src + '/**/*.scss', ['sass']);
-    gulp.watch(src + '/src/**/*.js', ['browserify']);
-    gulp.watch(src + '/src/**/*.jsx', ['browserify']);
-    gulp.watch(src + '/src/assets/**/*', ['assets']);
+    gulp.watch(src + '/js/**/*.js', ['browserify']);
+    gulp.watch(src + '/js/**/*.jsx', ['browserify']);
+    gulp.watch(src + '/assets/**/*', ['assets']);
 });
 
 gulp.task('default', ['html', 'browserify', 'sass', 'assets']);
