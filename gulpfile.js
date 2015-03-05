@@ -7,7 +7,8 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var buffer = require('vinyl-buffer');
-var port = process.env.port || 3000;
+
+var port = process.env.port || 3100;
 var src = './app';
 var dist = './dist'
 
@@ -41,9 +42,10 @@ gulp.task('connect', function() {
         root: dist,
         port: port,
         livereload: true,
+        fallback: dist + '/index.html',
         middleware: function() {
             return [
-              require('connect-gzip').gzip()
+                require('connect-gzip').gzip()
             ];
           }
     });
