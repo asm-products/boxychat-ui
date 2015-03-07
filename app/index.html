@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
-	<script src="http://localhost:3001/socket.io/socket.io.js"></script>
-    <script src="app.min.js"></script>
+<div id="superContainer"></div>
+	<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
     <script>
     	$(window,document).on('load resize ready',function(){
+            console.log('load')
 			var sidebarHeight = $(window).height()-$('#top-bar').height();
 			var messageboxWidth = $(window).width()-$('#side-bar').width();
 			$('#side-bar').css('height',sidebarHeight+'px');
 			$('#messagebox,.messagebar').css('width',messageboxWidth+'px');
+            $('#containerchat').css('width',messageboxWidth+'px');
 			$('.messagesBox').css('height',$(window).height() - 180);
 		});
     </script>

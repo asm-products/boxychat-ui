@@ -6,3 +6,12 @@
 @import"partials/topbar.scss";
 @import"partials/sidebar.scss";
 @import"partials/messagebox.scss";
+.hidden{
+	display: none
+}
+
+#containerChat {
+	width:auto;
+	float:left;
+	background-color:#fff;
+}

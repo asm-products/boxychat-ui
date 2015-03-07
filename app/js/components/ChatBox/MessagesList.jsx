@@ -11,16 +11,14 @@ var ChatMessage = require("./ChatMessage.jsx");
 var MessagesList = React.createClass({
 
   getInitialState: function () {
-    return { messages: [{date:new Date(), author: "myself", content: "hello"}] };
+    return { messages: [] };
   },
 
   addMessage: function (message) {
     var messages = this.state.messages;
     var container = this.refs.messageContainer.getDOMNode();
-    messages.push(message);
     this.setState({ messages: messages });
-    // Smart scrolling - when the user is
-    // scrolled a little we don't want to return him back
+    
     if (container.scrollHeight -
         (container.scrollTop + container.offsetHeight) >= 50) {
       this.scrolled = true;

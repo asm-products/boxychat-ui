@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<form method="post" action="http://localhost:3000/login" id="login">
+    <span>        
+        <label>Email: </label>
+        <input type="text" name="email" placeholder="E-Mail..." value="test@test.com"/>
+    </span>
+    <span>        
+        <label>Password: </label>
+        <input type="password" name="password" placeholder="Password..." value="q1w2e3"/>
+    </span>
+    <span>
+        <input type="submit" value="Submit" />      
+    </span>
+    
+</form>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
+    <script>
+    $(document).ready(function(e) {
+        if(localStorage.getItem('accessToken')) {
+            window.location = '/';
+        }
+    $("#login").submit(function(e) {
+            e.preventDefault();
+
+            var form_data = $(this).serialize();
+            var form_url = $(this).attr("action");
+            var form_method = $(this).attr("method").toUpperCase();
+
+            $.ajax({
+                url: form_url, 
+                type: form_method,      
+                data: form_data,     
+                cache: false,
+                success: function(result){
+                    console.log(result)
+                    //var r = JSON.parse(result);   
+                    console.log(result.accessToken);    
+                    if(result.accessToken) { 
+                        localStorage.setItem('accessToken', result.accessToken);
+                        window.location = '/';       
+                    }        
+                    // $("#result").html(returnhtml); 
+                    // $("#loadingimg").hide();                    
+                }           
+            });    
+            
+        });
+        
+    });
+</script>
+</body>
+</html>
