@@ -17,8 +17,10 @@ var MessagesList = React.createClass({
   addMessage: function (message) {
     var messages = this.state.messages;
     var container = this.refs.messageContainer.getDOMNode();
+    messages.push(message);
     this.setState({ messages: messages });
-    
+    // Smart scrolling - when the user is
+    // scrolled a little we don't want to return him back
     if (container.scrollHeight -
         (container.scrollTop + container.offsetHeight) >= 50) {
       this.scrolled = true;
@@ -48,7 +50,7 @@ var MessagesList = React.createClass({
       messages = <div className="chat-no-messages">No messages</div>;
     }
     return (
-      <div ref="messageContainer" className="messagesBox">
+      <div ref="messageContainer" className="messagesBox collection">
         {messages}
       </div>
     );
