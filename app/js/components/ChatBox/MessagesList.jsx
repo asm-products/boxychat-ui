@@ -11,7 +11,7 @@ var ChatMessage = require("./ChatMessage.jsx");
 var MessagesList = React.createClass({
 
   getInitialState: function () {
-    return { messages: [{date:new Date(), author: "myself", content: "hello"}] };
+    return { messages: [] };
   },
 
   addMessage: function (message) {
@@ -50,7 +50,7 @@ var MessagesList = React.createClass({
       messages = <div className="chat-no-messages">No messages</div>;
     }
     return (
-      <div ref="messageContainer" className="messagesBox">
+      <div ref="messageContainer" className="messagesBox collection">
         {messages}
       </div>
     );

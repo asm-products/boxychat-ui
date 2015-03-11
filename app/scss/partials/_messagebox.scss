@@ -77,6 +77,7 @@
 		}
 	}
 	.messagesBox {
+		width: 100%;
 		overflow:auto
 	}
 	.messagebar{
@@ -114,4 +115,72 @@
 		}
 		
 	}
+}
+
+.collection {
+  font-family:'roboto';
+  margin:0;
+  overflow: hidden;
+
+  .collection-item {
+    line-height: 1.5rem;
+    padding: 5px 20px;
+    margin: 0px;
+    border-bottom: 1px solid #e0e0e0;
+
+    // Avatar Collection
+    &.avatar {
+      padding-left: 72px;
+      position: relative;
+
+      .circle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i.circle {
+        font-size: 18px;
+        line-height: 42px;
+        color: #fff;
+        background-color: #999;
+        text-align: center;
+      }
+
+
+      .title {
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      p {
+      	font-size: 12px;
+        margin: 0;
+      }
+
+      .secondary-content {
+        position: absolute;
+        top: 6px;
+        right: 16px;
+        font-size: 13px;
+      }
+
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+// Made less specific to allow easier overriding
+.secondary-content {
+  float: right;
+  color: #777;
+}
+
+.circle {
+  @include border-radius(50%);
 }

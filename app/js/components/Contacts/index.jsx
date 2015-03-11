@@ -9,74 +9,71 @@ var { CSSTransitionGroup } = React.addons;
 
 // style
 //require("./index.scss");
+var resi = function() {
 
+}
 var Group = React.createClass({
   render: function () {
-    var item = this.props.item;
+    var group = this.props.group;
     return (
-			<li>
-				<div className="circle-outer-team"><div className="circle-team"><p>D</p></div></div>
-				<span>Developers Team</span>
-				<p className="notifications">6 new messages - 2 new files</p>
-			</li>
+            <Link className="contact" to="chat" params={{id: group.id, type: 'group'}} onClick={resi}>
+                <li>
+                    <div className="circle-outer-team"><div className="circle-team"><p>D</p></div></div>
+                    <span>{group.name}</span>
+                    <p className="notifications">6 new messages - 2 new files</p>
+                </li>
+            </Link>
     );
   }
 });
 
+var User = React.createClass({
+    render: function () {
+        var user = this.props.user;
+        return (
+            <Link className="contact" to="chat" params={{id: user.id, type: 'user'}}>
+                <li>
+                    <div className="online"></div>
+                    <div className="circle-outer-user"><div className="circle-user"><img src="images/Koala.jpg" /></div></div>
+                    <span>{user.name}</span>
+                </li>
+            </Link>
+        );
+    }
+});
+
 var Contacts = React.createClass({
-  render: function () {
-    var item = this.props.item;
-    return (
-    <ul id="side-bar">
-		<li className="sidebar-list team-list">
-			<ul>
-				<li className="active">
-					<div className="circle-outer-team"><div className="circle-team"><p>M</p></div></div>
-					<span>Marketing Team</span>
-				</li>
-				<li>
-					<div className="circle-outer-team"><div className="circle-team"><p>D</p></div></div>
-					<span>Developers Team</span>
-					<p className="notifications">6 new messages - 2 new files</p>
-				</li>
-				<li>
-					<div className="circle-outer-team"><div className="circle-team"><p>S</p></div></div>
-					<span>Seo Team</span>
-				</li>
-				<li>
-					<div className="circle-outer-team"><div className="circle-team"><p>G</p></div></div>
-					<span>General</span>
-				</li>
-				<li>
-					<div className="icons-Plusiconlarge"></div>
-				</li>
-			</ul> 
-		</li>
-		<li className="sidebar-list users-list">
-			<ul>
-				<li>
-					<div className="online"></div>
-					<div className="circle-outer-user"><div className="circle-user"><img src="images/Koala.jpg" /></div></div>
-					<span>John Snow</span>
-				</li>
-				<li>
-					<div className="online"></div>
-					<div className="circle-outer-user"><div className="circle-user"><img src="images/Koala.jpg" /></div></div>
-					<span>Hanry Potter</span>
-					<p className="notifications">6 new messages - 2 new files</p>
-				</li>
-				<li>
-					<div className="away"></div>
-					<div className="circle-outer-user"><div className="circle-user"><img src="images/Koala.jpg" /></div></div>
-					<span>Spider Man</span>
-				</li>
-				<li>
-					<div className="circle-outer-user"><div className="circle-user"><img src="images/Koala.jpg" /></div></div>
-					<span>Tony Stark</span>
-				</li>
-			</ul>
-		</li>
-</ul>
+    getInitialState: function () {
+        this.socket = this.props.socket;
+        return { groups: [], users: [] };
+    },
+    render: function () {
+        var item = this.props.item;
+        var groups;
+        groups = this.props.groups.map(function (g) {
+          return (
+            <Group group={g}></Group>
+          );
+        });
+
+        users = this.props.users.map(function (g) {
+          return (
+            <User user={g}></User>
+          );
+        });
+        return (
+        <ul id="side-bar">
+            <li className="sidebar-list team-list">
+                <ul>
+                    {groups}
+                </ul> 
+            </li>
+            <li className="sidebar-list users-list">
+                <ul>
+                    {users}
+                </ul>
+            </li>
+    </ul>
     );
   }
 });

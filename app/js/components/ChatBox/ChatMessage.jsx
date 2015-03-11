@@ -14,10 +14,11 @@ var ChatMessage = React.createClass({
     hours = (hours < 9) ? '0' + hours : hours;
     minutes = (minutes < 9) ? '0' + minutes : minutes;
     return (
-      <div className="chat-message">
-        <div className="message-time">[{ hours + ':' + minutes }]</div>
-        <div className="message-author">&lt;{msg.author}&gt;</div>
-        <div className="message-content">{msg.content}</div>
+      <div className="collection-item avatar">
+        <i className="circle"></i>
+        <span className="title">{msg.author}</span>
+        <p>{msg.content}</p>
+        <span href="#!" className="secondary-content">{ hours + ':' + minutes }</span>
       </div>
     );
   }
