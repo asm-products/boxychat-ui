@@ -7,6 +7,7 @@ var React = require("react/addons"),
 // shorthands
 var { Route, DefaultRoute, RouteHandler, Link } = Router;
 
+
 // polyfill
 if(!Object.assign) {
   Object.assign = React.__spread;
