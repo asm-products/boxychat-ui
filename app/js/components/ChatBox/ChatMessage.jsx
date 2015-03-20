@@ -1,3 +1,9 @@
+/**
+ * Chat Message
+ * @class Chat Message
+ *
+ **/
+
 /** @jsx React.DOM */
 'use strict';
 
